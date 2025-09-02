@@ -4,7 +4,7 @@
 - Full Name: Joey Morin
 
 ## Links
-- Github Repo:
+- Github Repo: https://github.com/joeymorin825/Java-Demo
 - Screencast:
 
 ## Tools
