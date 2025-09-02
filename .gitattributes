@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# 0) Make sure you're in the project folder
+pwd
+
+# 1) Initialize Git (skip if your repo already exists)
+git status || true
+git rev-parse --is-inside-work-tree 2>/dev/null || git init
+
+# 2) First commit (skip the add/commit if you already have commits)
+git add .
+git commit -m "Initial commit"
+
+# 3) Log in to GitHub CLI (if not already)
+gh auth status || gh auth login
+
+# 4) Create a GitHub repo from *this* folder and push it (PUBLIC per your assignment)
+#    Change the name if you want something else.
+gh repo create copilot-java-demo --public --source=. --remote=origin --push
+
+# 5) Open the repo page in your browser (grab the link for Canvas/README)
+gh repo view --web
